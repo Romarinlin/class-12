@@ -6,7 +6,9 @@
     <title>12班班史</title>
 </head>
 <style>
-
+*{  border:1px solid black;
+    
+}
 .menu-text {
     margin: 0;
     font-size: 23px;
@@ -16,7 +18,12 @@
 }
  body{height:100vh;
       background-color: rgb(255, 255, 255);
-    margin:0cm
+    margin:0cm;
+    background-image: url(pictures/background.jpg);
+            background-size: cover; /* 覆盖整个屏幕 */
+            background-position: center; /* 图片居中 */
+            background-repeat: no-repeat; /* 不重复 */
+            background-attachment: fixed; /* 固定背景 */
 }
 .f{display: flex;}
 .column{flex-direction: column;}
@@ -50,7 +57,7 @@
 
 .history{
     display:flex;
-    background-color: rgb(255, 255, 255);
+    
     align-self: stretch;
     height: 100%;
     margin-top:32px ;
@@ -68,6 +75,7 @@
             <img src="pictures/geography.jpg" height="60px" width="70px">
             
         </a>
+
         <p class="menu-text" style="margin: 0;">地理</p>
         <!-- geography -->
        </div>
@@ -79,6 +87,7 @@
         <p class="menu-text" style="margin: 0;">人物</p>
         <!-- people -->
        </div>
+       
     </div>
     <div class="history  f column align-center">
         <h1>正史</h1>
@@ -105,5 +114,4 @@
      <!-- history -->
     </div>
 </body>
-
 </html>
